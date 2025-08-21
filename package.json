@@ -1,0 +1,17 @@
+{
+  "name": "maollar-web-platform",
+  "version": "1.0.0",
+  "description": "Maollar E-commerce Web Platform",
+  "private": true,
+  "scripts": {
+    "build": "node cloudflare-build.js",
+    "build:buyer": "CF_MODULE=buyer node cloudflare-build.js",
+    "build:manager": "CF_MODULE=manager node cloudflare-build.js", 
+    "build:seller": "CF_MODULE=seller node cloudflare-build.js",
+    "build:im": "CF_MODULE=im node cloudflare-build.js",
+    "build:all": "./build-all.sh"
+  },
+  "engines": {
+    "node": ">= 14.x"
+  }
+}

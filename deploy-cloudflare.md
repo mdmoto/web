@@ -32,36 +32,25 @@ NODE_OPTIONS = --max_old_space_size=2048
 
 ---
 
-## Option 2: Fix Multi-Module Build (ADVANCED)
+## Option 2: Use the Original Multi-Module Build (ADVANCED)
 
-If you want to use the advanced setup with CF_MODULE:
+If you want to use the original CF_MODULE setup:
 
-1. **Add a wrangler.toml file** (to eliminate the warning):
-
-```toml
-name = "maollar-web"
-pages_build_output_dir = "buyer/dist"
-
-[[env.buyer.vars]]
-CF_MODULE = "buyer"
-
-[[env.manager.vars]]  
-CF_MODULE = "manager"
-
-[[env.seller.vars]]
-CF_MODULE = "seller"
-
-[[env.im.vars]]
-CF_MODULE = "im"
+**Use these settings**:
 ```
-
-2. **Then use these settings**:
-```
+Project name: maollar-buyer
+Production branch: master
+Framework preset: None
 Build command: CF_MODULE=buyer npm run build
 Build output directory: buyer/dist
-Environment Variables:
-- CF_MODULE = buyer
-- NODE_VERSION = 18
+Root directory: /
+```
+
+**Environment Variables**:
+```
+CF_MODULE = buyer
+NODE_VERSION = 18
+NODE_OPTIONS = --max_old_space_size=2048
 ```
 
 ---

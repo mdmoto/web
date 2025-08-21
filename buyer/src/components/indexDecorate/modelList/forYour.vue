@@ -83,11 +83,11 @@ export default {
   &:nth-of-type(4) {
     border-top: 1.4px solid #e2e2e2;
   }
-  &:hover {
-    /deep/ .goods-name {
+  .goods-item:hover {
+    ::v-deep .goods-name {
       color: $theme_color;
     }
-    /deep/ .goods-desc {
+    ::v-deep .goods-desc {
       color: $theme_color;
     }
   }
@@ -139,7 +139,7 @@ export default {
   position: relative;
   box-shadow: 0px 1px 13px 0px #E5E5E5;
 
-  &:hover {
+  .goods-item:hover {
     .setup-box {
       display: block;
     }
@@ -192,7 +192,7 @@ export default {
   height: 122px;
   padding:0 14px;
   align-items: center;
-  &:hover {
+  .goods-item:hover {
     > .hot-goods {
       > .hot-goods-title {
         color: $theme_color;

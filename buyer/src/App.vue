@@ -42,7 +42,7 @@ export default {
           // 存放过期时间
           storage.setItem("sitelogo_expiration_time", expirationTime);
           // 存放信息
-          storage.setItem('siteName',|| 'Maollar');
+          storage.setItem('siteName', data.siteName || 'Maollar');
           
           // ✅ 关键修改：强制使用本地logo，忽略API返回的logo
           storage.setItem('logoImg', require('@/assets/images/logo2.png'));

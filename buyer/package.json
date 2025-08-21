@@ -15,11 +15,10 @@
     "less": "^2.7.0",
     "less-loader": "^5.0.0",
     "mv-count-down": "^0.1.15",
-    "sass": "^1.32.0",
     "postcss-loader": "^4.3.0",
     "psl": "^1.8.0",
     "qs": "^6.9.4",
-    "sass-loader": "^7.3.1",
+    "sass": "^1.32.0",
     "uuid": "^8.3.2",
     "view-design": "^4.3.2",
     "vue": "^2.6.11",
@@ -32,7 +31,7 @@
   "devDependencies": {
     "@vue/cli-service": "~4.5.0",
     "compression-webpack-plugin": "^5.0.0",
-    "sass-loader": "^7.3.1",
+    "sass-loader": "^10.5.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-template-compiler": "^2.6.11"
   },
@@ -42,6 +41,6 @@
     "not dead"
   ],
   "engines": {
-  "node": ">= 14.x"
+    "node": ">= 14.x"
   }
 }
